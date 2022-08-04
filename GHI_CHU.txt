@@ -1,0 +1,1 @@
+﻿- Địa chỉ xem: How to find the column index to “Write Cell” if you know the column name. https://forum.uipath.com/t/how-to-find-the-column-index-to-write-cell-if-you-know-the-column-name/34207
