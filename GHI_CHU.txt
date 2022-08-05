@@ -23,7 +23,7 @@
 		
 		Chuyển kiểu chữ về kiểu số của column (VD: BRA=> 13, z=13)
 		Foreach currentRowChild in tempChild
-		     chuyển số về chữ (VD:z =13-> charWrite =char(13) = BRA)
+		     99999999999999(chuyển số về chữ (VD:z =13-> charWrite =char(13) = BRA)
 		     viết dữ liệu vào cell PO NO. charWrite+i
 		     z++
 
@@ -37,10 +37,23 @@
 
 		     chuyển số về chữ
 		     viết dữ liệu vào cell QTY_DATE charWrite+i (kiểu lúc này charWrite đã tăng lên 1 rồi đấy)
-		     z++
+		     z++)99999999999999 
+		    8888888888888(
+		    Nếu mà được thì cần viết 1 lần thôi và viết theo range ấy thì cần phải tính toán z lần vd 'RRi:KKi' thì phải tính toán ra RR, KK(4)
+		)8888888888888888
+			
+		
 
 		i++ (Sau khi duyệt con này thì chuyển sang duyệt con khác trong file mẫu)
 
 - Gửi mail thôi 
+
+
+
+- Vào đây mà đọc Phần chuyển đổi sang String, Number của Column
+https://forum.uipath.com/t/uipath-go-balareva-easyexcel-activities/166961/67
+https://forum.uipath.com/t/convert-excel-alphabetical-characters-into-column-numbers/144181/4
+đây nhá
+
 
 					
