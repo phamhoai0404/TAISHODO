@@ -1,1 +1,42 @@
 ﻿- Địa chỉ xem: How to find the column index to “Write Cell” if you know the column name. https://forum.uipath.com/t/how-to-find-the-column-index-to-write-cell-if-you-know-the-column-name/34207
+
+- Đọc nốt file TS007 rồi sau đó gộp vào
+- Lưu vào thành 1 file xử lý lưu dataListAll,  
+- 1 file copy từ file bản mẫu
+- Sắp xếp dataListAll theo request date tăng dần
+- mở excel đã copy
+	+ Đọc từ dòng int i = 8 ( VD: A8 là bắt đầu chẳng hạn)
+	+ while( đến khi nào A(i) mà rỗng null hay empty gì đó thì dừng)
+		Database tempChild = new (po no.,qty, date, qty-date )
+		Foreach currentRow theo dataListAll
+		    If currentRow("item") = A(i)
+			if(currentRow("ass2_date") có dữ liệu)
+		  		tempChild.add(Ai có add dữ liệu bình thường )
+		  		tempChild.add(Ai add dữ liệu là thằng date 2, qty là thằng 2)
+				(Nếu được không biết khi add rồi thì xóa nó đi ở trong dataListAll không biết nó có chạy nhanh không nữa)
+		    		if(tempChild.Count >= 5) break;==> Nếu mà nó có 5 rồi thì BREAK thôi còn không thì duyệt tiếp đến khi nào không còn nữa thì thôi ==== mình nghĩ nên viết ở trong if thứ 2 này thì sẽ nhanh hơn là viết ở ngoài ngang hàng với if thứ 2 - Mà rõ ràng nó là thế mà lại
+			else 
+				tempChild.add(Ai có add dữ liệu bình thường )
+				(Nếu được không biết khi add rồi thì xóa nó đi ở trong dataListAll không biết nó có chạy nhanh không nữa)
+				if(tempChild.Count >= 5) break;==> Nếu mà nó có 5 rồi thì BREAK thôi còn không thì duyệt tiếp đến khi nào không còn nữa thì thôi
+
+		
+		Chuyển kiểu chữ về kiểu số của column (VD: BRA=> 13, z=13)
+		Foreach currentRowChild in tempChild
+		     chuyển số về chữ (VD:z =13-> charWrite =char(13) = BRA)
+		     viết dữ liệu vào cell PO NO. charWrite+i
+		     z++
+
+		     chuyển số về chữ
+		     viết dữ liệu vào cell QTY charWrite+i (kiểu lúc này charWrite đã tăng lên 1 rồi đấy)
+		      z++
+
+		     chuyển số về chữ
+		     viết dữ liệu vào cell DATE charWrite+i (kiểu lúc này charWrite đã tăng lên 1 rồi đấy)
+	                       z++
+
+		     chuyển số về chữ
+		     viết dữ liệu vào cell QTY_DATE charWrite+i (kiểu lúc này charWrite đã tăng lên 1 rồi đấy)
+		     z++
+		i++ (Sau khi duyệt con này thì chuyển sang duyệt con khác trong file mẫu)
+					
