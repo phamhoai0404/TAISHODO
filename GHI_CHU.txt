@@ -38,5 +38,6 @@
 		     chuyển số về chữ
 		     viết dữ liệu vào cell QTY_DATE charWrite+i (kiểu lúc này charWrite đã tăng lên 1 rồi đấy)
 		     z++
+
 		i++ (Sau khi duyệt con này thì chuyển sang duyệt con khác trong file mẫu)
 					
